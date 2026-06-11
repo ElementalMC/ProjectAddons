@@ -67,6 +67,9 @@ public class FlameBreath extends FireAbility implements AddonAbility, ComboAbili
 
 	public FlameBreath(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown(this)) {
 			return;

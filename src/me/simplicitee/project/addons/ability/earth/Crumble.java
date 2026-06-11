@@ -34,6 +34,9 @@ public class Crumble extends SandAbility implements AddonAbility {
 	
 	public Crumble(Player player, ClickType click) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown(this)) {
 			return;

@@ -33,6 +33,9 @@ public class FlyingKick extends ChiAbility implements ComboAbility, AddonAbility
 
 	public FlyingKick(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown(this)) {
 			return;

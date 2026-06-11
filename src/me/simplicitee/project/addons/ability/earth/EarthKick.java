@@ -42,6 +42,9 @@ public class EarthKick extends EarthAbility implements AddonAbility, Listener{
 	
 	public EarthKick(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (getAbility(this.getClass()) == null) {
 			return;

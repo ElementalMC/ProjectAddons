@@ -39,6 +39,9 @@ public class FireDisc extends FireAbility implements AddonAbility {
 	
 	public FireDisc(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		this.loc = player.getEyeLocation();
 		this.direction = player.getLocation().getDirection();

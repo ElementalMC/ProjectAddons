@@ -25,6 +25,9 @@ public class TurboJet extends FireAbility implements AddonAbility, ComboAbility 
 	
 	public TurboJet(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (player.getLocation().getBlock().isLiquid()) {
 			return;

@@ -43,6 +43,9 @@ public class MistShards extends IceAbility implements AddonAbility, ComboAbility
 	
 	public MistShards(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown(this)) {
 			return;

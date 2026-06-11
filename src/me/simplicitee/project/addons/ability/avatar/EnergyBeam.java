@@ -71,6 +71,9 @@ public class EnergyBeam extends AvatarAbility implements AddonAbility{
 
 	public EnergyBeam(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		if (!bPlayer.canBend(this)) {
 			return;
 		}

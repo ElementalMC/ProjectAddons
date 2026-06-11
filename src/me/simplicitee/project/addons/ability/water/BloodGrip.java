@@ -43,6 +43,9 @@ public class BloodGrip extends BloodAbility implements AddonAbility, MultiAbilit
 	
 	public BloodGrip(Player player, boolean sneak) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (!bPlayer.canBendIgnoreBinds(this)) {
 			return;

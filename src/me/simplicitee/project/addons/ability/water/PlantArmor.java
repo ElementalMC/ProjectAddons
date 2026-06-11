@@ -130,6 +130,9 @@ public class PlantArmor extends PlantAbility implements AddonAbility, MultiAbili
 
 	public PlantArmor(Player player, ClickType type) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (!bPlayer.canBendIgnoreBinds(this)) {
 			return;
