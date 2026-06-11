@@ -25,6 +25,9 @@ public class Tailwind extends AirAbility implements ComboAbility, AddonAbility {
 
 	public Tailwind(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (hasAbility(player, Tailwind.class)) {
 			return;

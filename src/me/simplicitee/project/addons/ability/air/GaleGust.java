@@ -37,6 +37,9 @@ public class GaleGust extends AirAbility implements AddonAbility {
 	
 	public GaleGust(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		this.cooldown = ProjectAddons.instance.getConfig().getLong("Abilities.Air.GaleGust.Cooldown");
 		this.knockback = ProjectAddons.instance.getConfig().getDouble("Abilities.Air.GaleGust.Knockback");

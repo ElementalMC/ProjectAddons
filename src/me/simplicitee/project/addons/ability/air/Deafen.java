@@ -24,6 +24,9 @@ public class Deafen extends SoundAbility implements AddonAbility {
 	
 	public Deafen(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		Entity e = GeneralMethods.getTargetedEntity(player, 10);
 		if (e == null || !(e instanceof Player)) {

@@ -39,6 +39,9 @@ public class ChargeBolt extends LightningAbility implements AddonAbility {
 
 	public ChargeBolt(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown(this)) {
 			return;

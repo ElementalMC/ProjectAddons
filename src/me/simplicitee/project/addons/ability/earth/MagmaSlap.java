@@ -48,6 +48,9 @@ public class MagmaSlap extends LavaAbility implements AddonAbility {
 
 	public MagmaSlap(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		if (!bPlayer.canBend(this)) {
 			return;
 		}

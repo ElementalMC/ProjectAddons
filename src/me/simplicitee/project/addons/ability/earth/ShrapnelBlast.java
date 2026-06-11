@@ -12,6 +12,9 @@ public class ShrapnelBlast extends MetalAbility implements AddonAbility {
 
 	public ShrapnelBlast(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown("Shrapnel")) {
 			return;

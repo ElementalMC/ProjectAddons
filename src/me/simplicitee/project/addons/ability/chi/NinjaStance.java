@@ -32,6 +32,9 @@ public class NinjaStance extends ChiAbility implements AddonAbility, StanceAbili
 
 	public NinjaStance(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown(this)) {
 			return;

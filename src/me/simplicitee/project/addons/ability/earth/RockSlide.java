@@ -48,6 +48,9 @@ public class RockSlide extends EarthAbility implements AddonAbility, ComboAbilit
 	
 	public RockSlide(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown(this)) {
 			return;

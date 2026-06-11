@@ -32,6 +32,9 @@ public class ShrapnelShot extends MetalAbility implements AddonAbility {
 
 	public ShrapnelShot(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown("Shrapnel")) {
 			return;

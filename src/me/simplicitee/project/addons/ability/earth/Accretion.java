@@ -48,6 +48,9 @@ public class Accretion extends EarthAbility implements AddonAbility {
 
 	public Accretion(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		if (bPlayer.isOnCooldown(this)) {
 			return;

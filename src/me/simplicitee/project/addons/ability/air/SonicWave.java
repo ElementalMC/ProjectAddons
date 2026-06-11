@@ -38,6 +38,9 @@ public class SonicWave extends SoundAbility implements AddonAbility {
 	
 	public SonicWave(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		
 		this.width = ProjectAddons.instance.getConfig().getDouble("Abilities.Air.SonicWave.Width");
 		this.duration = ProjectAddons.instance.getConfig().getInt("Abilities.Air.SonicWave.Nausea.Duration");
