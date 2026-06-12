@@ -52,6 +52,7 @@ permissions:
       bending.ability.camouflage: true
       bending.ability.rockslide: true
       bending.ability.tailwind: true
+      bending.ability.meteordash: true
   bending.ability.plantarmor:
     children:
       bending.ability.plantarmor.vinewhip: true

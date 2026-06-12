@@ -337,7 +337,27 @@ public class ProjectAddons extends JavaPlugin {
 		config.addDefault("Abilities.Fire.Jets.SpeedThreshold", 2.4);
 		config.addDefault("Abilities.Fire.Jets.DamageThreshold", 4);
 		config.addDefault("Abilities.Fire.Jets.MaxHeight", -1);
-		
+
+		// MeteorDash
+		config.addDefault("Abilities.Fire.MeteorDash.Enabled", true);
+		config.addDefault("Abilities.Fire.MeteorDash.ExplosionsCount", 3);
+		config.addDefault("Abilities.Fire.MeteorDash.MeteorDamage", 2);
+		config.addDefault("Abilities.Fire.MeteorDash.AuraDamage", 2);
+		config.addDefault("Abilities.Fire.MeteorDash.AuraFireTicks", 19);
+		config.addDefault("Abilities.Fire.MeteorDash.UserKnockback", 2.5);
+		config.addDefault("Abilities.Fire.MeteorDash.EnemiesKnockback", 1.5);
+		config.addDefault("Abilities.Fire.MeteorDash.TimeBetweenExplosions", 5000);
+		config.addDefault("Abilities.Fire.MeteorDash.Cooldown", 7000);
+		config.addDefault("Abilities.Fire.MeteorDash.MeteoriteSetsCooldown", true);
+		config.addDefault("Abilities.Fire.MeteorDash.MinHeightToMeteorite", 10);
+		config.addDefault("Abilities.Fire.MeteorDash.TooCloseDistance", 3.0);
+		config.addDefault("Abilities.Fire.MeteorDash.DoAuraSpeed", 20);
+		config.addDefault("Abilities.Fire.MeteorDash.DoMeteoriteSpeed", 35);
+		config.addDefault("Abilities.Fire.MeteorDash.MinTimeBetweenExplosions", 500);
+		config.addDefault("Abilities.Fire.MeteorDash.FireInHands", true);
+		config.addDefault("Abilities.Fire.MeteorDash.FireAuraOnlyWhenSelected", false);
+		config.addDefault("Abilities.Fire.MeteorDash.FireAuraRadius", 2.0);
+
 		// FlameBreath
 		config.addDefault("Combos.Fire.FlameBreath.Enabled", true);
 		config.addDefault("Combos.Fire.FlameBreath.Cooldown", 8000);

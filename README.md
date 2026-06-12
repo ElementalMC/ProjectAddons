@@ -43,6 +43,7 @@
 - Explode
 - FireDisc
 - Jets
+- MeteorDash
 - FlameBreath (combo)
 - TurboJet (combo)
 

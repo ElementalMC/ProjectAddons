@@ -44,6 +44,7 @@ import me.simplicitee.project.addons.ability.fire.Electrify;
 import me.simplicitee.project.addons.ability.fire.Explode;
 import me.simplicitee.project.addons.ability.fire.FireDisc;
 import me.simplicitee.project.addons.ability.fire.Jets;
+import me.simplicitee.project.addons.ability.fire.MeteorDash;
 import me.simplicitee.project.addons.ability.water.BloodGrip;
 import me.simplicitee.project.addons.ability.water.MistShards;
 import me.simplicitee.project.addons.ability.water.PlantArmor;
@@ -258,6 +259,8 @@ public class MainListener implements Listener {
 			new ArcSpark(player);
 		} else if (canBend(player, "CombustBeam")) {
 			new CombustBeam(player);
+		} else if (canBend(player, "MeteorDash")) {
+			new MeteorDash(player);
 		} else if (canBend(player, "Bulwark")) {
 			new Bulwark(player);
 		} else if (canBend(player, "VocalMimicry")) {
