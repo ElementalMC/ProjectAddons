@@ -1,7 +1,7 @@
 # Building ProjectAddons
 
-ProjectAddons is compiled against **ProjectKorra 1.13.0** and **Spigot 1.21.11**
-and targets **Java 21**.
+ProjectAddons is compiled against **ProjectKorra 1.13.0** and **Spigot 26.1**
+(supports Minecraft 26.1, 26.1.2, and 26.2) and targets **Java 21**.
 
 ProjectKorra `1.13.0` is not yet published to Maven Central (Central currently
 only has up to `1.12.x`). Until it is released there, you must build it from the
@@ -36,7 +36,7 @@ machine.
 mvn clean package
 ```
 
-Output: `target/ProjectAddons-1.4.0-PK1.13.0.jar`
+Output: `target/ProjectAddons-1.4.1-PK1.13.0.jar`
 
 Once ProjectKorra 1.13.0 is published to Maven Central, step 1 will no longer be
 necessary.

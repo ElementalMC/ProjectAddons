@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.simplicitee</groupId>
     <artifactId>projectaddons</artifactId>
-    <version>1.4.0-PK1.13.0</version>
+    <version>1.4.1-PK1.13.0</version>
     <name>ProjectAddons</name>
     <repositories>
         <repository>
@@ -16,7 +16,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.21.11-R0.2-SNAPSHOT</version>
+            <version>26.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <!-- ProjectKorra -->
