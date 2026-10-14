@@ -17,6 +17,7 @@ import org.bukkit.Particle;
  */
 public enum ParticleEffect {
 	BLOCK_CRACK(Particle.BLOCK),
+	BUBBLE_POP(Particle.BUBBLE_POP),
 	CLOUD(Particle.CLOUD),
 	CRIT(Particle.CRIT),
 	CRIT_MAGIC(Particle.ENCHANTED_HIT),
@@ -27,8 +28,11 @@ public enum ParticleEffect {
 	EXPLOSION_NORMAL(Particle.POOF),
 	FLAME(Particle.FLAME),
 	HEART(Particle.HEART),
+	SMOKE_LARGE(Particle.LARGE_SMOKE),
+	SMOKE_NORMAL(Particle.SMOKE),
 	SOUL_FIRE_FLAME(Particle.SOUL_FIRE_FLAME),
-	SWEEP_ATTACK(Particle.SWEEP_ATTACK);
+	SWEEP_ATTACK(Particle.SWEEP_ATTACK),
+	WATER_BUBBLE(Particle.BUBBLE);
 
 	private final Particle particle;
 	private final Class<?> dataClass;

@@ -36,7 +36,7 @@ machine.
 mvn clean package
 ```
 
-Output: `target/ProjectAddons-1.4.0-PK1.13.0.jar`
+Output: `target/ProjectAddons-1.4.1-PK1.13.0.jar`
 
 Once ProjectKorra 1.13.0 is published to Maven Central, step 1 will no longer be
 necessary.
